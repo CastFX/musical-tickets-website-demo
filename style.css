@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700');
+
+body {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    background-color: #e2e2e3;
+    font-size: 12px;
+    color: #4D4D4D;
+	background-image: url(bg-image.png);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/* hide default background images - beginning */
+#main .t {
+    display: none;
+}
+
+#main .b {
+    /*background: none;*/
+    /*width: auto;*/
+    display: none;
+}
+
+#main .c {
+    background: none;
+    width: auto;
+    padding: 0;
+}
+/* hide default background images - end */
+
+/* hide empty containers - beginning */
+body.before #MainPart_divProgressbarBox_Holder p.larger {
+    display: none;
+}
+
+body.after #MainPart_divWarningBox {
+    display: none;
+}
+
+body.after #MainPart_divProcessbarBox {
+    display: none;
+}
+
+body.error #MainPart_divProgressbarBox {
+    display: none;
+}
+
+body.exit #MainPart_divProgressbarBox {
+    display: none;
+}
+
+body.landing #MainPart_divProgressbarBox {
+    display: none;
+}
+/* hide empty containers - end */
+
+h2 {
+    font-weight: 400;
+}
+
+#main {
+    width: 100%;
+    background-color: white;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    max-width: 550px;
+}
+
+#main-top {
+    padding: 0;
+}
+
+#main-top-message {
+}
+
+select {
+    border: 1px solid #adaeb0;
+    border-radius: 0;
+    padding: 5px 12px;
+    color: #4D4D4D;
+    font-family: inherit;
+}
+
+    select:focus {
+        outline: none;
+    }
+
+option:hover {
+    padding: 12px 35px;
+}
+
+.item {
+    margin: 6px 0;
+}
+
+#content {
+    font-weight: 400;
+    color: #4D4D4D;
+}
+
+
+#header {
+    padding: 20px 0;
+    font-weight: 400;
+    color: #4D4D4D;
+    border-color: #c4c5c7;
+    font-size: 15px;
+    line-height: 20px;
+    border: none;
+    line-height: normal;
+}
+
+.logo {
+    width: 100%;
+    margin: 0 auto 7px auto;
+}
+
+    .logo img {
+    }
+
+#header h2 {
+    margin-bottom: 8px;
+    line-height: normal;
+}
+
+a, #detailExpander {
+    color: #4D4D4D;
+}
+
+#detailExpander {
+    margin-bottom: 10px;
+}
+
+    #detailExpander span {
+        padding-right: 30px;
+        text-decoration: none;
+    }
+
+    #detailExpander span:hover{
+
+    }
+
+    #detailExpander div {
+        font-weight: 400;
+    }
+
+#whatisthis {
+    padding: 11px 0 6px 0;
+}
+
+.confirmredirectmodal div {
+    color: #4D4D4D;
+    font-size: 15px;
+    padding: 15px 25px;
+}
+
+.warning-box {
+    background: none;
+    color: #4D4D4D;
+    padding: 20px 0;
+    padding: 10px 0;
+    border: none;
+    border-color: #c4c5c7;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+}
+
+/* temp - TODO: remove before upload */
+.before .warning-box span {
+    font-weight: 400 !important;
+}
+
+.warning-box p {
+    margin: 0;
+}
+
+.warning-box a {
+    color: white;
+}
+
+#MainPart_lbManualUpdateWarning {
+    border-radius: 0;
+    margin: 0;
+}
+
+#divEmailStatusFrame {
+    margin-top: 10px;
+}
+
+.alert {
+    margin: 0;
+    font-size: 15px;
+    padding: 10px 15px;
+    text-shadow: none;
+    border-radius: 0;
+    border: none;
+    background-color: #fe3e3c;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#divEmailStatusFrame.alert {
+    background-color: white;
+    color: #4d4d4d;
+    font-weight: 400;
+}
+
+    #divEmailStatusFrame.alert.alert-error {
+        border: 1px solid #fe3e3c;
+    }
+
+    #divEmailStatusFrame.alert.alert-success {
+        border: 1px solid #3daf2c;
+        font-size: 12px;
+    }
+/*
+.alert-error{
+    background-color: transparent;
+    border-color: #fe3e3c;
+    color: #4D4D4D;
+}
+
+.alert-success{
+    background-color: #94d38b;
+}
+
+.submit_failure{
+    color: #4D4D4D;
+    color: #fe6563;
+}
+
+.submit_success{
+    color: #4D4D4D;
+}*/
+
+
+.progressbar {
+    background-color: #4D4D4D;
+    border-color: #4D4D4D;
+    border-radius: 0;
+}
+
+.processbar-box {
+    background: none;
+    color: #4D4D4D;
+    text-align: left;
+    font-weight: 400;
+    margin: 0;
+    /*padding: 0 0 25px 0;*/
+}
+
+    .processbar-box p {
+        margin: 0;
+    }
+
+    .processbar-box .holder {
+        background: none;
+        padding: 23px 0;
+        border-color: #c4c5c7;
+        font-size: 15px;
+        /*padding: 0;*/
+        border: none;
+    }
+
+        .processbar-box .holder .larger {
+            font-size: 15px;
+        }
+
+            .processbar-box .holder .larger span {
+                line-height: 24px;
+            }
+
+.hasCountdown {
+    font-weight: 400;
+    padding: 0 0 40px 0;
+    line-height: normal;
+    text-align: left;
+}
+
+#MainPart_ulProgressbarBox_Holder_Processbar {
+    display: inline-block;
+    margin: 6px 0 -7px -4px;
+}
+
+#MainPart_divProgressbarBox_Holder_LastUpdateTime {
+    display: inline-block;
+}
+
+/*.before #MainPart_divProgressbarBox_Holder_LastUpdateTime {
+    text-align: center;
+}*/
+
+.time-box {
+    margin: 0 0 20px 0;
+    background-color: #f3f3f4;
+    font-size: 15px;
+    color: #4D4D4D;
+}
+
+    .time-box .frame {
+        padding: 17px 15px;
+        min-height: 0;
+    }
+
+    .time-box h2 {
+        font-size: 15px;
+        color: #4D4D4D;
+        font-weight: 400;
+        margin: 5px 0 15px;
+    }
+
+    .time-box p {
+        margin: 5px 0;
+    }
+
+.reminder-form {
+    margin: 0 0 20px 0;
+}
+
+    .reminder-form h2 {
+        padding: 15px 0 6px 0;
+        font-size: 15px;
+        font-weight: 400;
+        margin-bottom: 0;
+        color: #4D4D4D;
+        /*padding: 0 0 8px 0;*/
+    }
+
+    .reminder-form .item-input {
+        padding: 10px;
+        margin: 0;
+        font-size: 15px;
+        background: #ffffff;
+        border: 1px solid #adaeb0;
+        color: #4D4D4D;
+        font-family: inherit;
+        font-weight: 400;
+        box-sizing: border-box;
+        line-height: normal;
+        width: auto;
+        min-width: 270px;
+    }
+
+        .reminder-form .item-input:focus {
+            color: #4D4D4D;
+            border: 1px solid #4D4D4D;
+            outline-color: transparent;
+            font-weight: 400;
+        }
+
+        .reminder-form .item-input::-webkit-input-placeholder {
+            /*color: #adaeb0;*/
+            color: #8a8b8f;
+        }
+
+        .reminder-form .item-input::-moz-placeholder { /* Firefox 19+ */
+            color: #8a8b8f;
+        }
+
+        .reminder-form .item-input:-ms-input-placeholder { /* IE 10+ */
+            color: #8a8b8f;
+        }
+
+        .reminder-form .item-input:-moz-placeholder { /* Firefox 18- */
+            color: #8a8b8f;
+        }
+
+.btn {
+    background-color: #3DAF2C;
+    color: #fff;
+    width: auto;
+    text-align: left;
+    display: inline-block;
+    margin: 0;
+    cursor: pointer;
+    white-space: nowrap;
+    padding: 13px 16px 12px 16px;
+    font-size: 15px;
+    line-height: normal;
+    border-radius: 0;
+    font-weight: bold;
+}
+
+.reminder-form .btn {
+    float: right;
+}
+
+.btn:hover {
+    box-shadow: none;
+    /*background: #318c23;*/
+    background: none;
+    background-color: #3DAF2C;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:active {
+    top: 0;
+}
+
+.block {
+    padding: 0;
+    font-size: 15px;
+}
+
+    .block p {
+        padding: 15px 0 2px 0;
+    }
+
+    .block a {
+        color: #4D4D4D;
+    }
+
+#footer {
+    width: 100%;
+    padding: 0;
+    color: #8a8b8f;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+    #footer a {
+        color: #8a8b8f;
+        font-weight: 400;
+    }
+
+    #footer .by {
+        padding-right: 0;
+    }
+
+#footer-direct-link {
+    padding: 0;
+}
+
+#footer-queueit-link {
+    margin-top: 4px;
+}
+
+@media screen and (max-width: 520px) {
+    .reminder-form .item-input {
+        min-width: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    #main {
+        padding: 15px;
+    }
+
+    .reminder-form .item-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #aUpdateEmail {
+        float: none;
+    }
+
+    #footer {
+        margin: 0;
+    }
+
+        #footer .by {
+            margin: 33px 0;
+        }
+}
+
+@media screen and (max-width: 350px) {
+    .processbar-box .holder .larger {
+        /*font-size: 14px;*/
+    }
+}
