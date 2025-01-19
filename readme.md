@@ -11,4 +11,4 @@ or
 python -m http.server 8080
 ```
 
-then go to [localhost:8080/index.html](localhost:8080/index.html)
+then go to [localhost:8080](localhost:8080)
