@@ -5,7 +5,8 @@ body {
     background-color: #e2e2e3;
     font-size: 12px;
     color: #4D4D4D;
-	background-image: url(bg-image.png);
+	/* background-image: url(bg-image.png); */
+	background-image: url(tunak.jpeg);
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
